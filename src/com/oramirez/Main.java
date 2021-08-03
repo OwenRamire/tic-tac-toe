@@ -26,8 +26,8 @@ public class Main {
     private static void printBoard(char[][] board) {
         System.out.print("+" + '\t' + "-" +  '\t' + "+" + '\t' + "-" + '\t' + "+" + '\t' + "-" + '\t' + "+");
         System.out.println();
-        for(byte row = 0; row < 3; row++) {
-            for(byte column = 0; column < 3; column++) {
+        for(byte row = 0; row < board.length; row++) {
+            for(byte column = 0; column < board[0].length; column++) {
                 System.out.print("|" + '\t' + board[row][column] + '\t');
             }
             System.out.print("|");
